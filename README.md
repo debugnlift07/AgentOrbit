@@ -1,4 +1,4 @@
-# 🚀 AgentOrbit – Cloud-Native AI Agent Application on Microsoft Azure
+# 🚀 AgentOrbit – A cloud-native Generative AI application and AI Agent architecture POC using Microsoft Foundry, React, ACR and AKS.
 
 **AgentOrbit** is a React-based Generative AI application integrated with Microsoft Foundry and deployed on Azure Kubernetes Service (AKS).
 
@@ -207,9 +207,8 @@ The demo showcases the React chat interface and its integration with Microsoft F
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/agent-orbit.git
-
-cd agent-orbit
+git clone https://github.com/debugnlift07/AgentOrbit.git
+cd AgentOrbit
 ```
 
 ### Step 2: Configure Microsoft Foundry
@@ -354,13 +353,11 @@ The following resources were used in the learning environment.
 | Resource Group | rg-ai-agents-aks-dev |
 | AKS Cluster | aks-ai-agents-dev |
 | Azure Container Registry | regkubaiagents |
-| Container Repository | aoaichatapp (original image repository) |
+| Container Repository | agent-orbit:v1 (original image repository) |
 | Image Tag | v1 |
 | AI Platform | Microsoft Foundry |
 | Frontend | React |
 | Orchestration | Kubernetes |
-
-**Note:** Update the container repository and image reference if you rename the original `aoaichatapp` image to `agent-orbit`.
 
 ---
 
