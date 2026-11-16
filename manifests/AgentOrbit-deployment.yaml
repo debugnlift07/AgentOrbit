@@ -1,0 +1,24 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: AgentOrbit
+  name: AgentOrbit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: AgentOrbit
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: AgentOrbit
+    spec:
+      containers:
+      - image: regkubaiagents.azurecr.io/AgentOrbit:v1
+        name: aoaichaAgentOrbittapp
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
